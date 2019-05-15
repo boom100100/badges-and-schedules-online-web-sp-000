@@ -30,7 +30,7 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  attendees.each {|attendee|
+  assign_rooms(attendees).each {|attendee|
     puts "Hello, my name is #{attendee}."
   }
 end
